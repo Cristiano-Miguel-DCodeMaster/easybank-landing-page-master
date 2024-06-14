@@ -61,8 +61,14 @@ footer{
     header{
         justify-content: space-around;
     }
+    header a{
+        text-decoration: none;
+    }
     header nav,header .header-request{
         display: block;
+    }
+    header nav a{
+        color: var(--GrayishBlue);
     }
     .first{
         flex-direction: row;
