@@ -10,6 +10,13 @@
 --VeryLightGray: hsl(0, 0%, 98%);
 --White: hsl(0, 0%, 100%);
 }
+@font-face {
+    font-family: 'publicsans';
+    src: url(/fonts/PublicSans[wght].ttf);
+}
+.container{
+    font-family: 'publicsans';
+}
 header{
     display: flex;
 }
@@ -68,7 +75,7 @@ footer{
         display: block;
     }
     header nav a{
-        color: var(--GrayishBlue);
+        color: var(--GrayishBluen);
     }
     .first{
         flex-direction: row;
