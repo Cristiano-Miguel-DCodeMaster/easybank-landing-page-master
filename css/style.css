@@ -44,12 +44,38 @@ footer{
     .first .left{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .first .left h1{
+        color: var(--DarkBlue);
+        font-weight: 400;
+        width: 80%;
+        text-align: center;
+        font-size: 29px;
+    }
+    .first .left p{
+        color: var(--GrayishBlue);
+        width: 80%;
+        font-size: 12px;
+        padding: 5px;
+    }
+    .first .left a{
+        background:linear-gradient(to left,var(--BrightCyan),var(--LimeGreen));
+        color: var(--White);
+        text-decoration: none;
+        padding: 15px;
+        border-radius: 100vmax;
+        font-size: 14px;
+        width: 45%;
+        text-align: center;
     }
     .first .right{
         background-image: url(/images/bg-intro-mobile.svg);
         background-position: center;
         background-size: cover;
-        height: 55vh;
+        height: 50vh;
         display: flex;
         justify-content: center;
         border:2px solid red;
@@ -58,7 +84,7 @@ footer{
         height: fit-content;
         width: 100%;
         position: absolute;
-        top: -10%;
+        top: -14%;
     }
 }
 @media only screen and (min-width:992px){
