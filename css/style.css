@@ -14,12 +14,12 @@
 	--VeryLightGray: hsl(0, 0%, 98%);
 	--White: hsl(0, 0%, 100%);
 }
-::-webkit-scrollbar {
-	display: none;
-}
 @font-face {
 	font-family: "publicsans";
 	src: url(/fonts/PublicSans[wght].ttf);
+}
+.first::-webkit-scrollbar{
+	display: none;
 }
 .container,
 header {
@@ -41,10 +41,11 @@ footer {
 	header {
 		padding: 20px;
 		justify-content: space-between;
-		position: sticky;
+		position: fixed;
 		top: 0;
 		background-color: white;
 		z-index: 1;
+		width: 90%;
 	}
 	.first {
 		display: flex;
@@ -55,7 +56,9 @@ footer {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		gap: 10px;
+		gap: 15px;
+		margin-top: -40px;
+		padding-bottom: 10%;
 	}
 	.first .left h1 {
 		color: var(--DarkBlue);
@@ -88,7 +91,7 @@ footer {
 		background-image: url(/images/bg-intro-mobile.svg);
 		background-position: center;
 		background-size: cover;
-		height: 50vh;
+		height: 65vh;
 		display: flex;
 		justify-content: center;
 	}
@@ -96,73 +99,42 @@ footer {
 		height: fit-content;
 		width: 90%;
 		position: absolute;
-		top: -8%;
+		top: -4%;
 	}
-}
-@media only screen and (min-width: 992px) {
-	header .hamburger {
-		display: none;
-	}
-	header {
-		justify-content: space-around;
-		align-items: center;
-		z-index: 2;
-	}
-	header a {
-		text-decoration: none;
-	}
-	header nav,
-	header .header-request {
-		display: block;
-	}
-	header nav {
+	.second{
 		display: flex;
-		gap: 20px;
-	}
-	header nav a {
-		color: var(--GrayishBlue);
-	}
-	.header-request {
-		background: linear-gradient(
-			to left,
-			var(--BrightCyan),
-			var(--LimeGreen)
-		);
-		color: var(--White);
-		text-decoration: none;
-		padding: 15px;
-		border-radius: 100vmax;
-		font-size: 14px;
-		width: 15%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		text-align: center;
 	}
-	.first {
-		flex-direction: row;
-		border: 2px solid red;
-		overflow: hidden;
-		height: 92vh;
-		margin-top: -3%;
-	}
-	.first .left {
+	.second .title{
+		display: flex;
+		flex-direction: column;
 		justify-content: center;
-		align-items: last baseline;
-		width: 10%;
+		align-items: center;
+		gap: 20px;
 	}
-	.first .left h1 {
-		text-align: left;
+	.second .title h2{
+		font-weight: 300;
+		border:2px solid red;
+		font-size: 29px;
+		color: var(--DarkBlue);
+		width: 80%;
 	}
-	.first .right {
-		border: 2px solid red;
-		width: 90%;
-		background-image: url(/images/bg-intro-desktop.svg);
-		background-position: center;
-		height: 92vh;
+	.second .title p{
+		padding-bottom: 30px;
+	}
+	.imagedescription{
+		display: flex;
+		flex-direction: column;
 		justify-content: center;
-		transform: translateX(37%);
+		align-items: center;
+		gap: 20px;
+		text-align: center;
 	}
-	.first .right .phone {
-		width: 40%;
-		position: absolute;
-		top: -10%;
+	.imagedescription p{
+		width: 80%;
 	}
 }
+
