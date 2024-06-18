@@ -18,7 +18,7 @@
 	font-family: "publicsans";
 	src: url(/fonts/PublicSans[wght].ttf);
 }
-.first::-webkit-scrollbar{
+.first::-webkit-scrollbar {
 	display: none;
 }
 .container,
@@ -65,7 +65,7 @@ footer {
 		font-weight: 400;
 		width: 80%;
 		text-align: center;
-		font-size: 29px;
+		font-size: 26px;
 	}
 	.first .left p {
 		color: var(--GrayishBlue);
@@ -101,40 +101,63 @@ footer {
 		position: absolute;
 		top: -4%;
 	}
-	.second{
+	.second {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
+		background-color: var(
+			--LightGrayishBlue
+		);
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
-	.second .title{
+	.second .maintitle {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		gap: 20px;
 	}
-	.second .title h2{
+	.second .maintitle h2 {
 		font-weight: 300;
-		border:2px solid red;
-		font-size: 29px;
+		font-size: 26px;
 		color: var(--DarkBlue);
 		width: 80%;
 	}
-	.second .title p{
+	.second .maintitle p {
 		padding-bottom: 30px;
+		color: var(--GrayishBlue);
+		font-size: 14px;
 	}
-	.imagedescription{
+	.imagedescription {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		gap: 20px;
+		gap: 5px;
 		text-align: center;
 	}
-	.imagedescription p{
-		width: 80%;
+	.imagedescription .title {
+		font-weight: 400;
+		font-size: 18px;
+		color: var(--DarkBlue);
+	}
+	.imagedescription p {
+		color: var(--GrayishBlue);
+		font-size: 14px;
+		padding-bottom: 10px;
+	}
+	.third {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.third img{
+		height: fit-content;
+		width: 85%;
+		border-radius: 4px 4px 0 0;
 	}
 }
-
