@@ -91,7 +91,7 @@ footer {
 		background-image: url(/images/bg-intro-mobile.svg);
 		background-position: center;
 		background-size: cover;
-		height: 65vh;
+		height: 75vh;
 		display: flex;
 		justify-content: center;
 	}
@@ -154,10 +154,17 @@ footer {
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
+		padding-top: 20%;
 	}
 	.third img{
 		height: fit-content;
-		width: 85%;
+		width: 88%;
 		border-radius: 4px 4px 0 0;
+	}
+	.third h3{
+		font-weight: 300;
+		font-size: 26px;
+		color: var(--DarkBlue);
+		padding-bottom: 20px;
 	}
 }
