@@ -111,7 +111,7 @@ footer {
 	}
 	.mobile-menu {
 		position: fixed;
-		top: 16%;
+		top: 24%;
 		z-index: 1;
 		background-color: var(
 			--VeryLightGray
@@ -130,8 +130,8 @@ footer {
 	.mobile-menu a {
 		text-decoration: none;
 		color: var(--DarkBlue);
-		font-size: 18px;
-		padding: 5px;
+		font-size: 12px;
+		padding: 0px;
 	}
 	.shadow {
 		background-color: var(--DarkBlue2);
@@ -158,13 +158,14 @@ footer {
 		font-weight: 400;
 		width: 80%;
 		text-align: center;
-		font-size: 26px;
+		font-size: 23px;
 	}
 	.first .left p {
 		color: var(--GrayishBlue);
-		width: 80%;
+		width: 97%;
 		font-size: 12px;
 		padding: 5px;
+		text-align: center;
 	}
 	.first .left a {
 		background: linear-gradient(
@@ -174,9 +175,9 @@ footer {
 		);
 		color: var(--White);
 		text-decoration: none;
-		padding: 15px;
+		padding: 10px;
 		border-radius: 100vmax;
-		font-size: 14px;
+		font-size: 12px;
 		width: 45%;
 		text-align: center;
 	}
@@ -184,7 +185,7 @@ footer {
 		background-image: url(/images/bg-intro-mobile.svg);
 		background-position: center;
 		background-size: cover;
-		height: 75vh;
+		height: 95vh;
 		display: flex;
 		justify-content: center;
 	}
@@ -215,14 +216,14 @@ footer {
 	}
 	.second .maintitle h2 {
 		font-weight: 300;
-		font-size: 26px;
+		font-size: 23px;
 		color: var(--DarkBlue);
 		width: 80%;
 	}
 	.second .maintitle p {
 		padding-bottom: 30px;
 		color: var(--GrayishBlue);
-		font-size: 14px;
+		font-size: 12px;
 	}
 	.imagedescription {
 		display: flex;
@@ -234,12 +235,12 @@ footer {
 	}
 	.imagedescription .title {
 		font-weight: 400;
-		font-size: 18px;
+		font-size: 16px;
 		color: var(--DarkBlue);
 	}
 	.imagedescription p {
 		color: var(--GrayishBlue);
-		font-size: 14px;
+		font-size: 12px;
 		padding-bottom: 10px;
 	}
 	.third {
@@ -249,9 +250,8 @@ footer {
 		flex-direction: column;
 		padding-top: 20%;
 		padding-bottom: 20%;
-		border:2px solid red;
 	}
-	.third .third-down{
+	.third .third-down {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -266,7 +266,7 @@ footer {
 	}
 	.third h3 {
 		font-weight: 300;
-		font-size: 26px;
+		font-size: 22px;
 		color: var(--DarkBlue);
 		padding-bottom: 20px;
 	}
@@ -277,24 +277,37 @@ footer {
 			var(--LightGrayishBlue2);
 		padding-left: 0;
 		padding-right: 0;
-		}
-	.third .third-down .third-card .author {
+	}
+	.third
+		.third-down
+		.third-card
+		.author {
 		font-size: 10px;
 		color: var(--GrayishBlue);
 		padding-top: 6%;
 		padding-left: 5%;
 		padding-right: 5%;
 	}
-	.third .third-down .third-card .title {
+	.third
+		.third-down
+		.third-card
+		.title {
 		color: var(--DarkBlue);
 		padding-top: 2%;
 		padding-left: 5%;
 		padding-right: 5%;
+		font-size: 14px;
 	}
-	.third .third-down .third-card .title:hover {
+	.third
+		.third-down
+		.third-card
+		.title:hover {
 		color: var(--LimeGreen);
 	}
-	.third .third-down .third-card .content {
+	.third
+		.third-down
+		.third-card
+		.content {
 		color: var(--GrayishBlue);
 		font-size: 12px;
 		padding-top: 2%;
@@ -335,6 +348,7 @@ footer {
 		text-decoration: none;
 		color: var(--LightGrayishBlue2);
 		padding: 10px;
+		font-size: 13px;
 	}
 	footer .thirdcol {
 		margin-top: -4%;
@@ -363,6 +377,7 @@ footer {
 	}
 	footer .footer-right p {
 		color: var(--GrayishBlue);
+		font-size: 12px;
 	}
 }
 @media only screen and (min-width: 320px) {
@@ -524,7 +539,7 @@ footer {
 		padding-top: 20%;
 		padding-bottom: 20%;
 	}
-	.third .third-down{
+	.third .third-down {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -550,24 +565,36 @@ footer {
 			var(--LightGrayishBlue2);
 		padding-left: 0;
 		padding-right: 0;
-		}
-	.third .third-down .third-card .author {
+	}
+	.third
+		.third-down
+		.third-card
+		.author {
 		font-size: 10px;
 		color: var(--GrayishBlue);
 		padding-top: 6%;
 		padding-left: 5%;
 		padding-right: 5%;
 	}
-	.third .third-down .third-card .title {
+	.third
+		.third-down
+		.third-card
+		.title {
 		color: var(--DarkBlue);
 		padding-top: 2%;
 		padding-left: 5%;
 		padding-right: 5%;
 	}
-	.third .third-down .third-card .title:hover {
+	.third
+		.third-down
+		.third-card
+		.title:hover {
 		color: var(--LimeGreen);
 	}
-	.third .third-down .third-card .content {
+	.third
+		.third-down
+		.third-card
+		.content {
 		color: var(--GrayishBlue);
 		font-size: 12px;
 		padding-top: 2%;
@@ -681,13 +708,22 @@ footer {
 	.imagedescription p {
 		font-size: 16px;
 	}
-	.third .third-down .third-card .author {
+	.third
+		.third-down
+		.third-card
+		.author {
 		font-size: 14px;
 	}
-	.third .third-down .third-card .title {
+	.third
+		.third-down
+		.third-card
+		.title {
 		font-size: 18px;
 	}
-	.third .third-down .third-card .content {
+	.third
+		.third-down
+		.third-card
+		.content {
 		font-size: 14px;
 	}
 	footer .seccol a,
@@ -724,13 +760,22 @@ footer {
 	.imagedescription p {
 		font-size: 16px;
 	}
-	.third .third-down .third-card .author {
+	.third
+		.third-down
+		.third-card
+		.author {
 		font-size: 12px;
 	}
-	.third .third-down .third-card .title {
+	.third
+		.third-down
+		.third-card
+		.title {
 		font-size: 18px;
 	}
-	.third .third-down .third-card .content {
+	.third
+		.third-down
+		.third-card
+		.content {
 		font-size: 14px;
 	}
 	footer .firstcolimgs img {
@@ -758,13 +803,22 @@ footer {
 	.imagedescription p {
 		font-size: 16px;
 	}
-	.third .third-down .third-card .author {
+	.third
+		.third-down
+		.third-card
+		.author {
 		font-size: 12px;
 	}
-	.third .third-down .third-card .title {
+	.third
+		.third-down
+		.third-card
+		.title {
 		font-size: 18px;
 	}
-	.third .third-down .third-card .content {
+	.third
+		.third-down
+		.third-card
+		.content {
 		font-size: 14px;
 	}
 	footer .firstcolimgs img {
@@ -797,13 +851,22 @@ footer {
 	.imagedescription p {
 		font-size: 18px;
 	}
-	.third .third-down .third-card .author {
+	.third
+		.third-down
+		.third-card
+		.author {
 		font-size: 14px;
 	}
-	.third .third-down .third-card .title {
+	.third
+		.third-down
+		.third-card
+		.title {
 		font-size: 20px;
 	}
-	.third .third-down .third-card .content {
+	.third
+		.third-down
+		.third-card
+		.content {
 		font-size: 16px;
 	}
 	footer .firstcolimgs img {
@@ -867,13 +930,22 @@ footer {
 	.imagedescription p {
 		font-size: 18px;
 	}
-	.third .third-down .third-card .author {
+	.third
+		.third-down
+		.third-card
+		.author {
 		font-size: 14px;
 	}
-	.third .third-down .third-card .title {
+	.third
+		.third-down
+		.third-card
+		.title {
 		font-size: 20px;
 	}
-	.third .third-down .third-card .content {
+	.third
+		.third-down
+		.third-card
+		.content {
 		font-size: 16px;
 	}
 	footer .firstcolimgs img {
@@ -929,13 +1001,22 @@ footer {
 	.third h3 {
 		font-size: 40px;
 	}
-	.third .third-down .third-card .author {
+	.third
+		.third-down
+		.third-card
+		.author {
 		font-size: 20px;
 	}
-	.third .third-down .third-card .title {
+	.third
+		.third-down
+		.third-card
+		.title {
 		font-size: 26px;
 	}
-	.third .third-down .third-card .content {
+	.third
+		.third-down
+		.third-card
+		.content {
 		font-size: 20px;
 	}
 	footer .firstcolimgs img {
@@ -998,13 +1079,22 @@ footer {
 	.imagedescription p {
 		font-size: 28px;
 	}
-	.third .third-down .third-card .author {
+	.third
+		.third-down
+		.third-card
+		.author {
 		font-size: 20px;
 	}
-	.third .third-down .third-card .title {
+	.third
+		.third-down
+		.third-card
+		.title {
 		font-size: 30px;
 	}
-	.third .third-down .third-card .content {
+	.third
+		.third-down
+		.third-card
+		.content {
 		font-size: 26px;
 	}
 	footer .firstcolimgs img {
@@ -1069,13 +1159,22 @@ footer {
 	.third h3 {
 		font-size: 50px;
 	}
-	.third .third-down .third-card .author {
+	.third
+		.third-down
+		.third-card
+		.author {
 		font-size: 24px;
 	}
-	.third .third-down .third-card .title {
+	.third
+		.third-down
+		.third-card
+		.title {
 		font-size: 36px;
 	}
-	.third .third-down .third-card .content {
+	.third
+		.third-down
+		.third-card
+		.content {
 		font-size: 30px;
 	}
 	footer .firstcolimgs img {
@@ -1094,7 +1193,7 @@ footer {
 }
 @media only screen and (min-width: 992px) {
 	header {
-		width: 70%;
+		width: 100%;
 		padding-top: 2%;
 		padding-bottom: 2%;
 	}
@@ -1133,12 +1232,19 @@ footer {
 		font-weight: 600;
 		margin-right: 55px;
 	}
+	.zero {
+		width: 100%;
+		height: 80vh;
+	}
 	.first {
 		display: flex;
 		flex-direction: row;
-		border:2px solid red;
 		overflow-x: hidden;
-		w100%
+		overflow-y: hidden;
+		height: 100vh;
+		position: absolute;
+		width: 100%;
+		top: 0;
 	}
 	.first .left {
 		display: flex;
@@ -1146,19 +1252,20 @@ footer {
 		justify-content: left;
 		align-items: last baseline;
 		gap: 15px;
-		width: 50%;
+		width: 55%;
 		height: fit-content;
-		transform: translateY(70%);
+		transform: translateY(95%);
 		padding-bottom: 0%;
-		border:2px solid red;
+		margin-left: 6%;
+
 	}
 	.first .left h1 {
 		width: 80%;
 		text-align: left;
-		font-size: 40px;
+		font-size: 38px;
 	}
 	.first .left p {
-		width: 80%;
+		width: 95%;
 		font-size: 16px;
 		text-align: left;
 	}
@@ -1166,33 +1273,36 @@ footer {
 		color: var(--White);
 		padding: 12px;
 		font-size: 14px;
-		width: 25%;
+		width: 40%;
 		text-align: center;
 	}
 	.first .right {
-		background-image: url(/images/bg-intro-mobile.svg);
+		background-image: url(/images/bg-intro-desktop.svg);
 		background-position: center;
 		background-size: cover;
-		height: 75vh;
+		height: 86vh;
+		width: 85%;
 		display: flex;
 		justify-content: center;
+		transform: translateX(17%);
+		position: relative;
 	}
 	.first .right .phone {
 		height: fit-content;
-		width: 50%;
-		right: 0;
-		transform: translateX(17%);
+		width: 90%;
+		right: 2%;
+		position: absolute;
 	}
 	.second {
-		justify-content:left;
+		justify-content: left;
 		align-items: last baseline;
 		text-align: center;
-		padding-top: 15%;
+		padding-top: 10%;
 		padding-bottom: 10%;
 	}
 	.second .maintitle {
 		flex-direction: column;
-		justify-content:left;
+		justify-content: left;
 		align-items: last baseline;
 		gap: 20px;
 		width: 50%;
@@ -1210,7 +1320,7 @@ footer {
 		font-size: 14px;
 		text-align: left;
 	}
-	.second .second-down{
+	.second .second-down {
 		display: flex;
 		gap: 10px;
 		width: 94%;
@@ -1218,13 +1328,13 @@ footer {
 	.imagedescription {
 		display: flex;
 		flex-direction: column;
-		justify-content:left;
+		justify-content: left;
 		align-items: last baseline;
 		gap: 15px;
 		text-align: center;
 		width: 22%;
 	}
-	.imagedescription img{
+	.imagedescription img {
 		width: 30%;
 	}
 	.imagedescription .title {
@@ -1243,7 +1353,7 @@ footer {
 		padding-top: 10%;
 		padding-bottom: 10%;
 	}
-	.third .third-down{
+	.third .third-down {
 		align-items: center;
 		flex-direction: row;
 		gap: 20px;
@@ -1267,15 +1377,21 @@ footer {
 			var(--LightGrayishBlue2);
 		padding-left: 0;
 		padding-right: 0;
-		}
-	.third .third-down .third-card .author {
+	}
+	.third
+		.third-down
+		.third-card
+		.author {
 		font-size: 10px;
 		color: var(--GrayishBlue);
 		padding-top: 6%;
 		padding-left: 5%;
 		padding-right: 5%;
 	}
-	.third .third-down .third-card .title {
+	.third
+		.third-down
+		.third-card
+		.title {
 		color: var(--DarkBlue);
 		padding-top: 2%;
 		cursor: pointer;
@@ -1283,10 +1399,16 @@ footer {
 		padding-right: 5%;
 		font-size: 16px;
 	}
-	.third .third-down .third-card .title:hover {
+	.third
+		.third-down
+		.third-card
+		.title:hover {
 		color: var(--LimeGreen);
 	}
-	.third .third-down .third-card .content {
+	.third
+		.third-down
+		.third-card
+		.content {
 		color: var(--GrayishBlue);
 		font-size: 11.5px;
 		padding-top: 2%;
@@ -1294,10 +1416,16 @@ footer {
 		padding-left: 5%;
 		padding-right: 5%;
 	}
-	.third .third-down .third-card .Clairecont{
+	.third
+		.third-down
+		.third-card
+		.Clairecont {
 		font-size: 10.9px;
 	}
-	.third .third-down .third-card .Wilsoncont{
+	.third
+		.third-down
+		.third-card
+		.Wilsoncont {
 		font-size: 11px;
 	}
 	footer {
@@ -1340,5 +1468,37 @@ footer {
 	}
 	footer .footer-right p {
 		font-size: 16px;
+	}
+}
+@media only screen and (min-width:1100px){
+	.first .right .phone{
+		width: 74%;
+	}
+}
+@media only screen and (min-width:1272px){
+	.first .left{
+		transform: translateY(89%);
+	}
+	.first .left h1{
+		font-size: 42px;
+	}
+	.first .left p{
+		width: 85%;
+	}
+	.first .left a{
+		font-size: 16px;
+		width: 30%;
+	}
+	.first .right{
+		transform: translateX(15%);
+	}
+	.second{
+		padding-top: 12%;
+	}
+	.second .maintitle{
+		transform: translateX(-16%);
+	}
+	.second .maintitle p{
+		width: 80%;
 	}
 }
