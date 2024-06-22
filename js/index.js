@@ -16,3 +16,9 @@ close.addEventListener('click', () => {
     mobileMenu.style.display = "none";
     shadow.style.display = "none";
 })
+const loader = document.querySelector('.loader'),
+    hider = document.querySelector('.hider');
+setTimeout(() => {
+    loader.style.display = "none";
+hider.style.display = "none";
+}, 7000);
