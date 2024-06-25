@@ -1502,3 +1502,329 @@ footer {
 		width: 80%;
 	}
 }
+@media only screen and (min-width:1440px) and (min-height:900px){
+	header nav a{
+		font-size: 23px;
+	}
+	.first .left{
+		transform: translateY(120%);
+	}
+	.first .left h1{
+		font-size: 55px;
+	}
+	.first .left p{
+		width: 80%;
+		font-size: 22px;
+	}
+	.first .left a{
+		font-size: 20px;
+	}
+	.first .right{
+		height: 90vh;
+	}
+	.first .right .phone{
+		width: 80%;
+	}
+	.second .maintitle h2 {
+		font-weight: 500;
+		font-size: 35px;
+	}
+	.second .maintitle p {
+		font-size: 22px;
+	}
+	.second .second-down {
+		display: flex;
+		gap: 10px;
+		width: 94%;
+	}
+	.imagedescription img {
+		width: 35%;
+	}
+	.imagedescription .title {
+		font-weight: 500;
+		font-size: 22px;;
+	}
+	.imagedescription p {
+		font-size: 18px;
+	}
+	.third .third-down .third-card img {
+		border-radius: 8px 8px 0 0;
+	}
+	.third h3 {
+		font-weight: 500;
+		font-size: 34px;
+		transform: translateX(55%);
+	}
+	.third
+		.third-down
+		.third-card
+		.author {
+		font-size: 15px;
+	}
+	.third
+		.third-down
+		.third-card
+		.title {
+		font-size: 23px;
+	}
+	.third
+		.third-down
+		.third-card
+		.content {
+		font-size: 17.5px;
+	}
+	.third
+		.third-down
+		.third-card
+		.Clairecont {
+		font-size: 16.9px;
+	}
+	.third
+		.third-down
+		.third-card
+		.Wilsoncont {
+		font-size: 17px;
+}
+footer .seccol a,
+footer .thirdcol a {
+	font-size: 30px;
+}
+footer .footer-right a {
+	font-size: 20px;
+	width: 70%;
+}
+footer .footer-right p {
+	font-size: 16px;
+}
+footer .firstcolimgs img {
+	width: 28%;
+}
+}
+@media only screen and (min-width:1440px) and (min-height:2262px){
+	header nav a{
+		font-size: 28px;
+	}
+	header .header-request{
+		font-size: 25px;
+	}
+	.zero{
+		height: 30vh;
+	}
+	.first .left{
+		transform: translateY(80%);
+	}
+	.first .left h1{
+		font-size: 55px;
+	}
+	.first .left p{
+		width: 88%;
+		font-size: 22px;
+	}
+	.first .left a{
+		font-size: 25px;
+		width: 40%;
+		padding: 15px;
+	}
+	.first .right{
+		height: 32.5vh;
+	}
+	.first .right .phone{
+		width: 90%;
+	}
+	.second .maintitle h2 {
+		font-weight: 500;
+		font-size: 35px;
+	}
+	.second .maintitle p {
+		font-size: 22px;
+	}
+	.second .second-down {
+		display: flex;
+		gap: 10px;
+		width: 94%;
+	}
+	.imagedescription img {
+		width: 35%;
+	}
+	.imagedescription .title {
+		font-weight: 500;
+		font-size: 22px;;
+	}
+	.imagedescription p {
+		font-size: 18px;
+	}
+	.third .third-down .third-card img {
+		border-radius: 8px 8px 0 0;
+		height: 12vh;
+	}
+	.third .third-down .third-card{
+		height: 22vh;
+	}
+	.third h3 {
+		font-weight: 500;
+		font-size: 34px;
+		transform: translateX(55%);
+	}
+	.third
+		.third-down
+		.third-card
+		.author {
+		font-size: 18px;
+	}
+	.third
+		.third-down
+		.third-card
+		.title {
+		font-size: 24px;
+	}
+	.third
+		.third-down
+		.third-card
+		.content {
+		font-size: 17.5px;
+	}
+	.third
+		.third-down
+		.third-card
+		.Clairecont {
+		font-size: 16.9px;
+	}
+	.third
+		.third-down
+		.third-card
+		.Wilsoncont {
+		font-size: 17px;
+}
+footer .seccol a,
+footer .thirdcol a {
+	font-size: 30px;
+}
+footer .footer-right a {
+	font-size: 20px;
+	width: 70%;
+}
+footer .footer-right p {
+	font-size: 16px;
+}
+footer .firstcolimgs img {
+	width: 28%;
+}
+}
+@media only screen and (min-width:2560px){
+	header .logo{
+		margin-left: 200px;
+	}
+	header nav a{
+		font-size: 38px;
+	}
+	header .header-request{
+		font-size: 30px;
+		padding: 20px;
+	}
+	.zero{
+		height: 40vh;
+	}
+	.first .left{
+		transform: translateY(80%);
+	}
+	.first .left h1{
+		font-size: 80px;
+	}
+	.first .left p{
+		width: 88%;
+		font-size: 35px;
+	}
+	.first .left a{
+		font-size: 35px;
+		width: 40%;
+		padding: 35px;
+	}
+	.first .right{
+		height: 40.5vh;
+	}
+	.first .right .phone{
+		width: 70%;
+	}
+	.second .maintitle h2 {
+		font-weight: 500;
+		font-size: 65px;
+	}
+	.second .maintitle p {
+		font-size: 36px;
+	}
+	.second .second-down {
+		gap: 15px;
+		width: 94%;
+	}
+	.imagedescription img {
+		width: 35%;
+	}
+	.imagedescription .title {
+		font-weight: 500;
+		font-size: 35px;
+	}
+	.imagedescription p {
+		font-size:30px;
+	}
+	.third .third-down .third-card img {
+		border-radius: 8px 8px 0 0;
+		height: 18vh;
+	}
+	.third .third-down .third-card{
+		height: 22vh;
+	}
+	.third h3 {
+		font-weight: 500;
+		font-size: 34px;
+		transform: translateX(95%);
+	}
+	.third
+		.third-down
+		.third-card
+		.author {
+		font-size: 25px;
+	}
+	.third
+		.third-down
+		.third-card
+		.title {
+		font-size: 34px;
+	}
+	.third
+		.third-down
+		.third-card
+		.content {
+		font-size: 24.5px;
+	}
+	.third
+		.third-down
+		.third-card
+		.Clairecont {
+		font-size: 25.9px;
+	}
+	.third
+		.third-down
+		.third-card
+		.Wilsoncont {
+		font-size: 25px;
+}
+footer{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	gap: 400px;
+}
+footer .seccol a,
+footer .thirdcol a {
+	font-size: 30px;
+}
+footer .footer-right a {
+	font-size: 20px;
+	width: 70%;
+}
+footer .footer-right p {
+	font-size: 16px;
+}
+footer .firstcolimgs img {
+	width: 28%;
+}
+}
