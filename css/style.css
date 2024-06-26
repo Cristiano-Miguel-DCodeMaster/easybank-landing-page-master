@@ -76,9 +76,6 @@ body {
 	font-family: "publicsans";
 	src: url(/fonts/PublicSans[wght].ttf);
 }
-.first::-webkit-scrollbar {
-	display: none;
-}
 .container,
 header {
 	font-family: "publicsans";
@@ -140,9 +137,16 @@ footer {
 		position: fixed;
 		display: none;
 	}
+	section {
+		transition: 1s;
+	}
 	.first {
 		display: flex;
 		flex-direction: column-reverse;
+		transform: translateX(-100%);
+	}
+	.first.me {
+		transform: translateX(0);
 	}
 	.first .left {
 		display: flex;
@@ -188,6 +192,7 @@ footer {
 		height: 95vh;
 		display: flex;
 		justify-content: center;
+		transition: all 2s;
 	}
 	.first .right .phone {
 		height: fit-content;
@@ -206,6 +211,10 @@ footer {
 		);
 		padding-top: 30%;
 		padding-bottom: 50px;
+		transform: translateX(-100%);
+	}
+	.second.me {
+		transform: translateX(0);
 	}
 	.second .maintitle {
 		display: flex;
@@ -250,6 +259,10 @@ footer {
 		flex-direction: column;
 		padding-top: 20%;
 		padding-bottom: 20%;
+		transform: translateX(-100%);
+	}
+	.third.me {
+		transform: translateX(0);
 	}
 	.third .third-down {
 		display: flex;
@@ -429,9 +442,16 @@ footer {
 		position: fixed;
 		display: none;
 	}
+	section {
+		transition: 1s;
+	}
 	.first {
 		display: flex;
 		flex-direction: column-reverse;
+		transform: translateX(-100%);
+	}
+	.first.me {
+		transform: translateX(0);
 	}
 	.first .left {
 		display: flex;
@@ -494,6 +514,10 @@ footer {
 		);
 		padding-top: 30%;
 		padding-bottom: 50px;
+		transform: translateX(-100%);
+	}
+	.second.me {
+		transform: translateX(0);
 	}
 	.second .maintitle {
 		display: flex;
@@ -512,6 +536,12 @@ footer {
 		padding-bottom: 30px;
 		color: var(--GrayishBlue);
 		font-size: 14px;
+		transform: translateX(-100%);
+		transition: 1s;
+		transition-delay: 1s;
+	}
+	.second.me .maintitle p{
+		transform: translateX(0);
 	}
 	.imagedescription {
 		display: flex;
@@ -520,6 +550,12 @@ footer {
 		align-items: center;
 		gap: 5px;
 		text-align: center;
+		transform: translateY(200%);
+		transition: 1s;
+		transition-delay: 2s;
+	}
+	.second.me .imagedescription{
+		transform: translateY(0);
 	}
 	.imagedescription .title {
 		font-weight: 400;
@@ -538,6 +574,10 @@ footer {
 		flex-direction: column;
 		padding-top: 20%;
 		padding-bottom: 20%;
+		transform: translateX(-100%);
+	}
+	.third.me {
+		transform: translateX(0);
 	}
 	.third .third-down {
 		display: flex;
@@ -551,6 +591,12 @@ footer {
 		height: fit-content;
 		width: 100%;
 		border-radius: 4px 4px 0 0;
+		transform: translateX(-200%);
+		transition: 1s;
+		transition-delay: 1s;
+	}
+	.third.me .third-down .third-card img{
+		transform: translateX(0);
 	}
 	.third h3 {
 		font-weight: 300;
@@ -1257,7 +1303,6 @@ footer {
 		transform: translateY(95%);
 		padding-bottom: 0%;
 		margin-left: 6%;
-
 	}
 	.first .left h1 {
 		width: 80%;
@@ -1470,59 +1515,59 @@ footer {
 		font-size: 16px;
 	}
 }
-@media only screen and (min-width:1100px){
-	.first .right .phone{
+@media only screen and (min-width: 1100px) {
+	.first .right .phone {
 		width: 74%;
 	}
 }
-@media only screen and (min-width:1272px){
-	.first .left{
+@media only screen and (min-width: 1272px) {
+	.first .left {
 		transform: translateY(89%);
 	}
-	.first .left h1{
+	.first .left h1 {
 		font-size: 42px;
 	}
-	.first .left p{
+	.first .left p {
 		width: 85%;
 	}
-	.first .left a{
+	.first .left a {
 		font-size: 16px;
 		width: 30%;
 	}
-	.first .right{
+	.first .right {
 		transform: translateX(15%);
 	}
-	.second{
+	.second {
 		padding-top: 12%;
 	}
-	.second .maintitle{
+	.second .maintitle {
 		transform: translateX(-16%);
 	}
-	.second .maintitle p{
+	.second .maintitle p {
 		width: 80%;
 	}
 }
-@media only screen and (min-width:1440px) and (min-height:900px){
-	header nav a{
+@media only screen and (min-width: 1440px) and (min-height: 900px) {
+	header nav a {
 		font-size: 23px;
 	}
-	.first .left{
+	.first .left {
 		transform: translateY(120%);
 	}
-	.first .left h1{
+	.first .left h1 {
 		font-size: 55px;
 	}
-	.first .left p{
+	.first .left p {
 		width: 80%;
 		font-size: 22px;
 	}
-	.first .left a{
+	.first .left a {
 		font-size: 20px;
 	}
-	.first .right{
+	.first .right {
 		height: 90vh;
 	}
-	.first .right .phone{
+	.first .right .phone {
 		width: 80%;
 	}
 	.second .maintitle h2 {
@@ -1542,7 +1587,7 @@ footer {
 	}
 	.imagedescription .title {
 		font-weight: 500;
-		font-size: 22px;;
+		font-size: 22px;
 	}
 	.imagedescription p {
 		font-size: 18px;
@@ -1584,51 +1629,51 @@ footer {
 		.third-card
 		.Wilsoncont {
 		font-size: 17px;
+	}
+	footer .seccol a,
+	footer .thirdcol a {
+		font-size: 30px;
+	}
+	footer .footer-right a {
+		font-size: 20px;
+		width: 70%;
+	}
+	footer .footer-right p {
+		font-size: 16px;
+	}
+	footer .firstcolimgs img {
+		width: 28%;
+	}
 }
-footer .seccol a,
-footer .thirdcol a {
-	font-size: 30px;
-}
-footer .footer-right a {
-	font-size: 20px;
-	width: 70%;
-}
-footer .footer-right p {
-	font-size: 16px;
-}
-footer .firstcolimgs img {
-	width: 28%;
-}
-}
-@media only screen and (min-width:1440px) and (min-height:2262px){
-	header nav a{
+@media only screen and (min-width: 1440px) and (min-height: 2262px) {
+	header nav a {
 		font-size: 28px;
 	}
-	header .header-request{
+	header .header-request {
 		font-size: 25px;
 	}
-	.zero{
+	.zero {
 		height: 30vh;
 	}
-	.first .left{
+	.first .left {
 		transform: translateY(80%);
 	}
-	.first .left h1{
+	.first .left h1 {
 		font-size: 55px;
 	}
-	.first .left p{
+	.first .left p {
 		width: 88%;
 		font-size: 22px;
 	}
-	.first .left a{
+	.first .left a {
 		font-size: 25px;
 		width: 40%;
 		padding: 15px;
 	}
-	.first .right{
+	.first .right {
 		height: 32.5vh;
 	}
-	.first .right .phone{
+	.first .right .phone {
 		width: 90%;
 	}
 	.second .maintitle h2 {
@@ -1648,7 +1693,7 @@ footer .firstcolimgs img {
 	}
 	.imagedescription .title {
 		font-weight: 500;
-		font-size: 22px;;
+		font-size: 22px;
 	}
 	.imagedescription p {
 		font-size: 18px;
@@ -1657,7 +1702,7 @@ footer .firstcolimgs img {
 		border-radius: 8px 8px 0 0;
 		height: 12vh;
 	}
-	.third .third-down .third-card{
+	.third .third-down .third-card {
 		height: 22vh;
 	}
 	.third h3 {
@@ -1694,55 +1739,55 @@ footer .firstcolimgs img {
 		.third-card
 		.Wilsoncont {
 		font-size: 17px;
+	}
+	footer .seccol a,
+	footer .thirdcol a {
+		font-size: 30px;
+	}
+	footer .footer-right a {
+		font-size: 20px;
+		width: 70%;
+	}
+	footer .footer-right p {
+		font-size: 16px;
+	}
+	footer .firstcolimgs img {
+		width: 28%;
+	}
 }
-footer .seccol a,
-footer .thirdcol a {
-	font-size: 30px;
-}
-footer .footer-right a {
-	font-size: 20px;
-	width: 70%;
-}
-footer .footer-right p {
-	font-size: 16px;
-}
-footer .firstcolimgs img {
-	width: 28%;
-}
-}
-@media only screen and (min-width:2560px){
-	header .logo{
+@media only screen and (min-width: 2560px) {
+	header .logo {
 		margin-left: 200px;
 	}
-	header nav a{
+	header nav a {
 		font-size: 38px;
 	}
-	header .header-request{
+	header .header-request {
 		font-size: 30px;
 		padding: 20px;
 	}
-	.zero{
+	.zero {
 		height: 40vh;
 	}
-	.first .left{
+	.first .left {
 		transform: translateY(80%);
 	}
-	.first .left h1{
+	.first .left h1 {
 		font-size: 80px;
 	}
-	.first .left p{
+	.first .left p {
 		width: 88%;
 		font-size: 35px;
 	}
-	.first .left a{
+	.first .left a {
 		font-size: 35px;
 		width: 40%;
 		padding: 35px;
 	}
-	.first .right{
+	.first .right {
 		height: 40.5vh;
 	}
-	.first .right .phone{
+	.first .right .phone {
 		width: 70%;
 	}
 	.second .maintitle h2 {
@@ -1764,13 +1809,13 @@ footer .firstcolimgs img {
 		font-size: 35px;
 	}
 	.imagedescription p {
-		font-size:30px;
+		font-size: 30px;
 	}
 	.third .third-down .third-card img {
 		border-radius: 8px 8px 0 0;
 		height: 18vh;
 	}
-	.third .third-down .third-card{
+	.third .third-down .third-card {
 		height: 22vh;
 	}
 	.third h3 {
@@ -1807,24 +1852,24 @@ footer .firstcolimgs img {
 		.third-card
 		.Wilsoncont {
 		font-size: 25px;
-}
-footer{
-	padding-top: 100px;
-	padding-bottom: 100px;
-	gap: 400px;
-}
-footer .seccol a,
-footer .thirdcol a {
-	font-size: 30px;
-}
-footer .footer-right a {
-	font-size: 20px;
-	width: 70%;
-}
-footer .footer-right p {
-	font-size: 16px;
-}
-footer .firstcolimgs img {
-	width: 28%;
-}
+	}
+	footer {
+		padding-top: 100px;
+		padding-bottom: 100px;
+		gap: 400px;
+	}
+	footer .seccol a,
+	footer .thirdcol a {
+		font-size: 30px;
+	}
+	footer .footer-right a {
+		font-size: 20px;
+		width: 70%;
+	}
+	footer .footer-right p {
+		font-size: 16px;
+	}
+	footer .firstcolimgs img {
+		width: 28%;
+	}
 }
