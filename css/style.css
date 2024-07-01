@@ -1262,6 +1262,10 @@ footer {
 		text-decoration: none;
 		color: var(--GrayishBlue);
 	}
+	header nav a:hover{
+		border-bottom: 2px solid var(--LimeGreen);
+		padding-bottom: 10px;
+	}
 	header .header-request {
 		text-decoration: none;
 		background: linear-gradient(
