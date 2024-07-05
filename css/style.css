@@ -1265,6 +1265,7 @@ footer {
 	header nav a:hover{
 		border-bottom: 2px solid var(--LimeGreen);
 		padding-bottom: 10px;
+		transition: all .5s ease-out;
 	}
 	header .header-request {
 		text-decoration: none;
