@@ -74,7 +74,7 @@ body {
 }
 @font-face {
 	font-family: "publicsans";
-	src: url(/fonts/PublicSans[wght].ttf);
+	src: url("/fonts/PublicSans[wght].ttf");
 }
 .container,
 header {
